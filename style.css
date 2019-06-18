@@ -17,7 +17,7 @@ header, nav, main, aside, footer {
 }
 
 .topic {
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 /**
@@ -224,6 +224,12 @@ nav ul li {
     list-style-type: none;
     padding: 10px;
 }
+
+/**
+ * Colors
+ */
+
+
 
 /**
  * Box-sizing
