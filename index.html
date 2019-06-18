@@ -14,25 +14,17 @@
 
     <nav>
         <ul>
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
-            <li>Link 2</li>
+            <li><a href="/#box-model">Box model</a></li>
+            <li><a href="/#inline-vs-block">Block vs inline vs inline-block</a></li>
+            <li><a href="/#transition">Transition</a></li>
+            <li><a href="/#transform">Transform</a></li>
         </ul>
     </nav>
 
     <main>
-        <section>
+
+        <!-- Box model -->
+        <section id="box-model" class="topic">
             <h2>Box model and box-sizing property.</h2>
 
             <div class="box content-box">
@@ -43,12 +35,9 @@
             </div>
         </section>
 
-        <br/>
-        <br/>
 
-        <hr/>
-
-        <section>
+        <!-- Block vs inline vs inline-block -->
+        <section id="inline-vs-block" class="topic">
             <h2>Block vs Inline vs Inline-block</h2>
 
             <h3>Block</h3>
@@ -104,6 +93,37 @@
 
         </section>
 
+        <!-- Transitioning -->
+        <section id="transition" class="topic">
+            <h2>Transitions</h2>
+
+            <p>
+                A property and a duration of the transition must be specified at least. Also timing linear function and
+                delay time can be specified.
+                To transition more that one property, they must be separated by comma.
+            </p>
+
+            <div class="transitioned-box">Transitioned box</div>
+        </section>
+
+        <!-- Transform -->
+        <section id="transform" class="topic">
+            <h2>Transform</h2>
+            <h3>2D</h3>
+
+            <div class="transformed-box rotate">Rotate</div>
+            <div class="transformed-box translate">Translate</div>
+            <div class="transformed-box scale">Scale</div>
+            <div class="transformed-box skew">Skew</div>
+            <div class="transformed-box matrix">Matrix</div>
+
+
+            <h3>3D</h3>
+
+            <div class="transformed-box rotate3d">Rotate</div>
+            <div class="transformed-box translate3d">Translate</div>
+            <div class="transformed-box scale3d">Scale</div>
+        </section>
     </main>
 
     <aside>
