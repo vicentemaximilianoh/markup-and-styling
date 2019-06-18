@@ -1,0 +1,19 @@
+
+header, footer {
+    width: 100%;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+main {
+    width: 75%;
+    float: left;
+}
+
+aside {
+    width: 25%;
+    float: left;
+}

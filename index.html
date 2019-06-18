@@ -33,14 +33,75 @@
 
     <main>
         <section>
-            <h2>Main content</h2>
+            <h2>Box model and box-sizing property.</h2>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus ullam, unde earum rem excepturi esse nostrum quod molestias, impedit quos accusantium harum vel dolorem repellat deserunt veritatis nihil animi.
-            </p>
+            <div class="box content-box">
+                Content box = content + padding =  520 x 120 = padding and border is NOT included in width and height sizes
+            </div>
+            <div class="box content-border">
+                Content border = 500 x 100 = padding and border is included in width and height sizes
+            </div>
+        </section>
 
-            <div class="box content-box">Content box = content + padding =  520 x 120 = padding and border is NOT included in width and height sizes</div>
-            <div class="box content-border">Content border = 500 x 100 = padding and border is included in width and height sizes</div>
+        <br/>
+        <br/>
+
+        <hr/>
+
+        <section>
+            <h2>Block vs Inline vs Inline-block</h2>
+
+            <h3>Block</h3>
+
+            <div>
+                <div class="particular-box">Block 1</div>
+                <div>Block 2</div>
+                <div>Block 3</div>
+                <div>Block 4</div>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Width and height are allowed to set</li>
+                    <li>all margin sides are allowed to set</li>
+                    <li>adds a line break after an element</li>
+                </ul>
+            </div>
+
+            <h3>Inline</h3>
+
+            <div>
+                <span class="particular-box">Block 1</span>
+                <span>Block 2</span>
+                <span>Block 3</span>
+                <span>Block 4</span>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Width and height are NOT allowed to set</li>
+                    <li>top and bottom margin are NOT allowed to set</li>
+                    <li>does NOT add a line break after an element</li>
+                </ul>
+            </div>
+
+            <h3>Inline-block</h3>
+
+            <div>
+                <div style="display: inline-block;">Block 1</div>
+                <div style="display: inline-block;"  class="particular-box">Block 2</div>
+                <div style="display: inline-block;">Block 3</div>
+                <div style="display: inline-block;">Block 4</div>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Width and height are allowed to set</li>
+                    <li>all margin sides are allowed to set</li>
+                    <li>does NOT add a line break after an element</li>
+                </ul>
+            </div>
+
         </section>
 
     </main>
