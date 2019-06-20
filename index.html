@@ -25,6 +25,7 @@
             <li><a href="/#columns-layout">Column Layout</a></li>
             <li><a href="/#colors">Colors</a></li>
             <li><a href="gradients/gradients.html">Gradients</a></li>
+            <li><a href="pseudo-classes/pseudo-classes.html">Pseudo-classes</a></li>
         </ul>
     </nav>
 
@@ -245,6 +246,41 @@
                 <li>color names: black, white, green, and so on.</li>
             </ul>
 
+        </section>
+
+        <section class="topic" id="specificity">
+            <h2>Specificity</h2>
+
+            <p>If there are two or more conflicting CSS rules that point to the same element, the browser follows some rules to determine which one is most specific and therefore wins out.</p>
+
+            <p>Specificity levels and how it is  calculated:</p>
+
+            <ul>
+                <li>Style attribute => 1000</li>
+                <li>ID => 100/each ID</li>
+                <li>Classes, attributes and pseudo-classes => 10 each one</li>
+                <li>Elements, pseudo-elements => 1 / each one</li>
+                <li>Universal selector or inherited values => 0</li>
+            </ul>
+
+            <p><b>Contextual selector (defined in embedded style sheet) are more specific than single selectors:</b></p>
+
+        </section>
+
+        <section class="topic" id="pseudo-elements">
+            <h2>Pseudo-elements</h2>
+
+            <p>Defines a part of an element.</p>
+
+            <pre>element<b>::</b>pseudo-element</pre>
+
+            <ul>
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+            </ul>
         </section>
 
     </main>

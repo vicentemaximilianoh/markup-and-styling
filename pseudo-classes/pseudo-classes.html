@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-classes</title>
+    <link rel="stylesheet" href="pseudo-classes.css">
+</head>
+<body>
+
+
+    <section class="topic" id="pseudo-classes">
+        <h2>Pseudo-classes</h2>
+
+        <p>Defines a special state of an element.</p>
+
+        <pre>element<b>:</b>pseudo-class { ... }</pre>
+
+        <br>
+        <h3>Position-related: :x-child and :x-of-type</h3>
+
+        <p>p:first-child is not selected because first child is not a paragraph but it's a h5.</p>
+        <p>p:last-child is not selected because last child is not a paragraph but it's a h5.</p>
+
+        <div class="child-list">
+            <h5 class="child-item">text 1</h5>
+            <p class="child-item">text 2</p>
+            <p class="child-item">text 3</p>
+            <p class="child-item">text 4</p>
+            <p class="child-item">text 5</p>
+            <h5 class="child-item">text 6</h5>
+        </div>
+
+        <br>
+        <h3>Form controls</h3>
+
+        <p>Required</p>
+        <input class="input-pseudo-class" required type="text">
+
+        <p>Optional</p>
+        <input class="input-pseudo-class" type="text">
+
+        <p>Checked</p>
+        <input class="input-pseudo-class" type="checkbox" name="input-checkbox" id="input-checkbox">
+        <label for="input-checkbox">Checkbox</label>
+
+        <p>Enabled</p>
+        <input type="text" name="" id="">
+
+        <p>Disabled</p>
+        <input type="text" name="" id="" disabled>
+
+        <p>Read-only</p>
+        <input type="text" name="" id="" readonly>
+
+        <br>
+        <h3>Links</h3>
+
+        <a>No href</a>
+        <a href="http://google.com" target="_blank">Google</a>
+        <a href="http://facebook.com" target="_blank">Facebook</a>
+
+        <br>
+        <h3>Negative selector</h3>
+
+        <p class="paragraph negative-paragraph">Paragraph</p>
+        <p class="negative-paragraph">Negative paragraph</p>
+    </section>
+</body>
+</html>

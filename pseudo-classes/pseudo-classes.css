@@ -1,0 +1,95 @@
+.child-list * {
+    border: 2px;
+}
+
+.child-list  p:first-child {
+    color: red;
+}
+
+.child-list  p:nth-child(2) {
+    color: green;
+}
+
+.child-list  p:nth-last-child(2) {
+    color: orange;
+}
+
+.child-list  p:last-child {
+    color: blue;
+}
+
+.child-list  p:first-of-type {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+.child-list  p:nth-of-type(2) {
+    text-decoration-color: green;
+    text-decoration-line: underline;
+}
+
+.child-list  p:nth-last-of-type(2) {
+    text-decoration-color: orange;
+    text-decoration-line: underline;
+}
+
+.child-list  p:last-of-type {
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+}
+
+/**
+ * Form control
+ */
+
+.input-pseudo-class:required {
+    border: 1px solid red;
+}
+
+.input-pseudo-class:optional {
+    border: 1px solid black;
+}
+
+.input-pseudo-class:checked + label {
+    color: blue;
+}
+
+input:disabled {
+    background: lightgrey;
+}
+
+input:read-only {
+    background: grey;
+}
+
+input:hover {
+    background: yellow;
+}
+
+input:focus {
+    background: blueviolet;
+}
+
+/* Links */
+
+a {
+    color: grey;
+}
+
+a:link {
+    color: blue;
+}
+
+a:focus {
+    color: green;
+}
+
+a:visited {
+    color: violet;
+}
+
+/* Negative */
+
+p.negative-paragraph:not(.paragraph) {
+    color: orange;
+}
