@@ -2,6 +2,10 @@
     border: 2px;
 }
 
+.child-item {
+    display: inline-block;
+}
+
 .child-list  p:first-child {
     color: red;
 }
@@ -92,4 +96,28 @@ a:visited {
 
 p.negative-paragraph:not(.paragraph) {
     color: orange;
+}
+
+/**
+ * Pseudo-element
+ */
+
+.pseudo-elem-before::before {
+    content: '☕';
+}
+
+.pseudo-elem-after::after {
+    content: '☕';
+}
+
+.pseudo-elem-first-letter::first-letter {
+    font-size: 36px;
+}
+
+.pseudo-elem-first-line::first-line {
+    color: red;
+}
+
+.pseudo-elem-selection::selection {
+    background: greenyellow;
 }
